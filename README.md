@@ -36,25 +36,25 @@ Retrieval-Augmented Generation (RAG) is an advanced approach that combines retri
     *b.)* n_gpu_layers when set to -1 all the weights are offloaded to GPU. We can control it to implement partial offloads to GPU and CPU.
 
 
-```
-def load_model():
-    # Define the LLM Model
-    n_gpu_layers = -1
-    n_batch = 500
-    context_len = 2048
-    callback_manager = CallbackManager([StreamingStdOutCallbackHandler()])
-    llm = LlamaCpp(
-        model_path="Model/zephyr-7b-beta.Q4_0.gguf",
-        temperature=0.1,
-        max_tokens=2000,
-        n_gpu_layers=n_gpu_layers,
-        n_ctx=context_len,
-        n_batch=n_batch,
-        callback_manager=callback_manager,
-        verbose=True,  # Verbose is required to pass to the callback manager
-    )
-    return llm
-```
+    ```
+    def load_model():
+        # Define the LLM Model
+        n_gpu_layers = -1
+        n_batch = 500
+        context_len = 2048
+        callback_manager = CallbackManager([StreamingStdOutCallbackHandler()])
+        llm = LlamaCpp(
+            model_path="Model/zephyr-7b-beta.Q4_0.gguf",
+            temperature=0.1,
+            max_tokens=2000,
+            n_gpu_layers=n_gpu_layers,
+            n_ctx=context_len,
+            n_batch=n_batch,
+            callback_manager=callback_manager,
+            verbose=True,  # Verbose is required to pass to the callback manager
+        )
+        return llm
+    ```
 7. Once all is done run the app:
     ```
     streamlit run main.py
