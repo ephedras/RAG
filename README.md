@@ -59,3 +59,8 @@ def load_model():
     ```
     streamlit run main.py
     ```
+
+
+
+https://github.com/user-attachments/assets/9c29ef7e-4b18-430e-a514-8649378923a3
+
