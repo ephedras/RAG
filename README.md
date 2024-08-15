@@ -1,8 +1,7 @@
-# RAG
-This is a vanilla PDF RAG implementation using local LLM.
-
 ![RAG Image](assets/RAG.png)
 
+# RAG
+This is a vanilla PDF RAG implementation using local LLM.
 
 Retrieval-Augmented Generation (RAG) is an advanced approach that combines retrieval-based methods with generative models to enhance natural language understanding and response generation. This technique is designed to improve the quality and relevance of generated responses by integrating external information retrieval with the generative capabilities of models like GPT (Generative Pre-trained Transformer).
 
@@ -15,7 +14,10 @@ Retrieval-Augmented Generation (RAG) is an advanced approach that combines retri
 *Adaptability*: RAG models can be fine-tuned with specific datasets to cater to particular domains or topics.
 
 ## Usage 
-1. Install Langchain, langchain_community
+1. Install requirements
+    ```
+    pip install -r requirements.txt
+    ```
 2. Model weights needs to be loaded in Model directory
 3. Pdf files to be placed in data directory
 4. 	Initialise database creater for first time :
