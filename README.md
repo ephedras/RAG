@@ -1,6 +1,9 @@
 # RAG
 This is a vanilla PDF RAG implementation using local LLM.
 
+![RAG Image](assets/RAG.png)
+
+
 Retrieval-Augmented Generation (RAG) is an advanced approach that combines retrieval-based methods with generative models to enhance natural language understanding and response generation. This technique is designed to improve the quality and relevance of generated responses by integrating external information retrieval with the generative capabilities of models like GPT (Generative Pre-trained Transformer).
 
 **Advantages of RAG**
