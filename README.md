@@ -56,6 +56,6 @@ def load_model():
     return llm
 ```
 7. Once all is done run the app:
-```
-streamlit run main.py
-```
+    ```
+    streamlit run main.py
+    ```
