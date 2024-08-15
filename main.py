@@ -1,3 +1,8 @@
+'''
+Ephedras:
+RAG
+Zypher 7b model 
+'''
 import streamlit as st
 from langchain.chains import RetrievalQA
 from langchain_community.embeddings.sentence_transformer import (
@@ -57,7 +62,7 @@ if 'llm' not in st.session_state:
 
 tabinfo, tababout = st.sidebar.tabs(["INFO", "ABOUT"])
 with tabinfo:
-    st.info('''This is a part of work designed for Retrieval Augmented Generation (RAG) using open-source 
+    st.info('''Retrieval Augmented Generation (RAG) using open-source 
                 models''')
 with tababout:
     st.warning('Designed by:\n\nEphedras, Coimbatore\n\nver. 1.2\n\nDate: 27/03/2024', icon="🔥")
