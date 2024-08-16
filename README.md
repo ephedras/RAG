@@ -1,4 +1,5 @@
-![RAG Image](assets/RAG.png)
+
+![RAG_framework](https://github.com/user-attachments/assets/6b8fcc1f-ded8-4d59-96ef-6face088bec8)
 
 # RAG
 This is a vanilla PDF RAG implementation using local LLM.
